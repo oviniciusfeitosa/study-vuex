@@ -2,7 +2,12 @@
     export default {
         methods: {
             mudarDados () {
-                console.log("Alo mundo!")
+                const payload = {
+                    name: 'Outro Nome',
+                    email: 'email@email.com',
+                    level: 'usuario-sem-moral'
+                }
+                this.$store.commit('CHANGE_USER', payload)
             }
         }
     }
