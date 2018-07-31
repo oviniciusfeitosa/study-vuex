@@ -2,6 +2,7 @@
     import CcUsers from './components/users/main.vue'
 
     export default {
+        name: 'AppVueX',
         components: {
             CcUsers
         },
