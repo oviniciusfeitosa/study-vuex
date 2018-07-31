@@ -2,7 +2,9 @@
     export default {
         computed: {
             user() {
-              return `O Usuário logado é ${this.$store.state.user.name} e possui o e-mail ${this.$store.state.user.email}`
+                const { name, email } = this.$store.state.user
+
+                return `O Usuário logado é ${name} e possui o e-mail ${email}`
             }
         }
     }
