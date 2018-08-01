@@ -1,8 +1,8 @@
 export default {
     user: {
-        name: 'Vinicius Feitosa da Silva',
-        email: 'viniciusfesil@gmail.com',
-        level: 'admin-da-porra-toda'
+        name: '',
+        email: '',
+        level: ''
     },
-    token: 'roiaoiejoirjoiajr3'
+    token: ''
 }

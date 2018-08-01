@@ -3,6 +3,14 @@
 
     export default {
         name: 'AppVueX',
+        mounted() {
+            const payload = {
+                name: 'Vinicius Feitosa da Silva',
+                email: 'viniciusfesil@gmail.com',
+                level: 'admin-da-porra-toda'
+            }
+            this.$store.commit('CHANGE_USER', payload)
+        },
         components: {
             CcUsers
         },
