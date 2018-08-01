@@ -9,7 +9,11 @@
                 email: 'viniciusfesil@gmail.com',
                 level: 'admin-da-porra-toda'
             }
-            this.$store.commit('CHANGE_USER', payload)
+
+            setTimeout(() => {
+                this.$store.commit('CHANGE_USER', payload)
+            }, 1000)
+
         },
         components: {
             CcUsers
