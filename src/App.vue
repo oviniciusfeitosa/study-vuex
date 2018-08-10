@@ -8,7 +8,9 @@
             const payload = {
                 name: 'Vinicius Feitosa da Silva',
                 email: 'viniciusfesil@gmail.com',
-                level: 'admin-da-porra-toda'
+                level: 'admin-da-porra-toda',
+                city: 'Brasília',
+                state: 'Distrito Federal',
             }
 
             setTimeout(() => {

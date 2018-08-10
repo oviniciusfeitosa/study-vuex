@@ -6,7 +6,9 @@
                 const payload = {
                     name: 'Outro Nome',
                     email: 'email@email.com',
-                    level: 'usuario-sem-moral'
+                    level: 'usuario-sem-moral',
+                    city: 'Brasília',
+                    state: 'Distrito Federal',
                 }
                 this.changeUser(payload)
             },
