@@ -12,7 +12,8 @@
             }
 
             setTimeout(() => {
-                this.$store.commit('CHANGE_USER', payload)
+                this.$store.dispatch('changeName', payload);
+                //this.$store.commit('CHANGE_USER', payload)
             }, 1000)
 
         },
@@ -20,19 +21,13 @@
             CcUsers
         },
         computed: {
+            // com o mapState é possível ter mais de uma computed proprerty utilizando o vuex
             ...mapState({
                 user: state => {
                     const {name, email} = state.user
                     return `O Usuário logado é ${name} e possui o e-mail ${email}`
                 }
             })
-            // name:  state => this.$store.state.user.name,
-
-            // user() {
-            //     const {name, email} = this.$store.state.user
-            //
-            //     return `O Usuário logado é ${name} e possui o e-mail ${email}`
-            // }
         }
     }
 </script>
