@@ -12,7 +12,7 @@
             }
 
             setTimeout(() => {
-                this.$store.dispatch('changeName', payload);
+                this.$store.dispatch('changeUser', payload);
                 //this.$store.commit('CHANGE_USER', payload)
             }, 1000)
 
