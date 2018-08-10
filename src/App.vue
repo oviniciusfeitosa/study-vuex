@@ -1,5 +1,6 @@
 <script>
     import CcUsers from './components/users/main.vue'
+    import { mapState } from 'vuex'
 
     export default {
         name: 'AppVueX',
@@ -19,11 +20,16 @@
             CcUsers
         },
         computed: {
-            user() {
-                const {name, email} = this.$store.state.user
+            ...mapState({
+                user: state => state.user.name
+            })
+            // name:  state => this.$store.state.user.name,
 
-                return `O Usuário logado é ${name} e possui o e-mail ${email}`
-            }
+            // user() {
+            //     const {name, email} = this.$store.state.user
+            //
+            //     return `O Usuário logado é ${name} e possui o e-mail ${email}`
+            // }
         }
     }
 </script>
