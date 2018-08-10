@@ -7,8 +7,8 @@
                     name: 'Outro Nome',
                     email: 'email@email.com',
                     level: 'usuario-sem-moral',
-                    city: 'Brasília',
-                    state: 'Distrito Federal',
+                    city: 'Planaltina',
+                    state: 'Goiás',
                 }
                 this.changeUser(payload)
             },
