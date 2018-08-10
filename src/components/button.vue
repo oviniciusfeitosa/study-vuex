@@ -1,4 +1,5 @@
 <script>
+    import { mapActions } from 'vuex'
     export default {
         methods: {
             mudarDados () {
@@ -7,8 +8,11 @@
                     email: 'email@email.com',
                     level: 'usuario-sem-moral'
                 }
-                this.$store.commit('CHANGE_USER', payload)
-            }
+                this.changeUser(payload)
+            },
+            ...mapActions([
+                'changeUser'
+            ])
         },
         computed: {
             hasUser() {
@@ -17,7 +21,7 @@
         }
     }
 </script>
-<template> 
+<template>
     <div>
         <button :disabled="!hasUser" @click="mudarDados">Mudar dados do usuário</button>
     </div>
