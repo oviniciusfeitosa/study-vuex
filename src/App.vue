@@ -21,7 +21,10 @@
         },
         computed: {
             ...mapState({
-                user: state => state.user.name
+                user: state => {
+                    const {name, email} = state.user
+                    return `O Usuário logado é ${name} e possui o e-mail ${email}`
+                }
             })
             // name:  state => this.$store.state.user.name,
 
