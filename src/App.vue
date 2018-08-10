@@ -14,6 +14,7 @@
             setTimeout(() => {
                 // this.$store.dispatch('changeUser', payload);
                 //this.$store.commit('CHANGE_USER', payload)
+                this.changeUser(payload)
             }, 1000)
 
         },
