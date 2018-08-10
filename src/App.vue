@@ -1,6 +1,6 @@
 <script>
     import CcUsers from './components/users/main.vue'
-    import { mapState } from 'vuex'
+    import { mapState, mapActions } from 'vuex'
 
     export default {
         name: 'AppVueX',
@@ -12,13 +12,18 @@
             }
 
             setTimeout(() => {
-                this.$store.dispatch('changeUser', payload);
+                // this.$store.dispatch('changeUser', payload);
                 //this.$store.commit('CHANGE_USER', payload)
             }, 1000)
 
         },
         components: {
             CcUsers
+        },
+        methods: {
+            ...mapActions([
+                'changeUser'
+            ])
         },
         computed: {
             // com o mapState é possível ter mais de uma computed proprerty utilizando o vuex
